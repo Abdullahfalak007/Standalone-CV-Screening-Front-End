@@ -1,0 +1,19 @@
+{
+  "logo": "/logo.png",
+  "hotlineIcon": "/Ellipse.png",
+  "dragAndDrop": "/drag_and_drop.svg",
+  "browse": "/browse.svg",
+  "googleDrive": "/google_drive.svg",
+  "dropbox": "/dropbox.svg",
+  "logo_white": "/logo_white.svg",
+  "facebook_icon": "/facebook_icon.svg",
+  "facebook": "/facebook.svg",
+  "linkedin_icon": "/linkedin_icon.svg",
+  "footer_bg_luminosity": "/footer_bg_luminosity.svg",
+  "hotlineContainer": "/hotline_container.svg",
+  "personImage": "/person_img.svg",
+  "google": "/google.svg",
+  "nameIcon": "/name_icon.svg",
+  "emailIcon": "/email_icon.svg",
+  "passwordIcon": "/password_icon.svg"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Home",
+    "link": "/home"
+  },
+  {
+    "label": "About us",
+    "link": "/about"
+  },
+  {
+    "label": "Work Flow",
+    "link": "/workflow"
+  },
+  {
+    "label": "Our Products",
+    "link": "/products"
+  },
+  {
+    "label": "Testimonials",
+    "link": "/testimonials"
+  },
+  {
+    "label": "Contact us",
+    "link": "/contact"
+  }
+]

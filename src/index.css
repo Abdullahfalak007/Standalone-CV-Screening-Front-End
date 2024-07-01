@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "AirbnbCereal_W_Bd";
+  src: url("./fonts/AirbnbCereal_W_Bd.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "AirbnbCereal_W_Bk";
+  src: url("./fonts/AirbnbCereal_W_Bk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AirbnbCereal_W_Blk";
+  src: url("./fonts/AirbnbCereal_W_Blk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AirbnbCereal_W_Lt";
+  src: url("./fonts/AirbnbCereal_W_Lt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AirbnbCereal_W_Md";
+  src: url("./fonts/AirbnbCereal_W_Md.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AirbnbCereal_W_XBd";
+  src: url("./fonts/AirbnbCereal_W_XBd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Orbitron-Black";
+  src: url("./fonts/Orbitron-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron-Bold";
+  src: url("./fonts/Orbitron-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron-ExtraBold";
+  src: url("./fonts/Orbitron-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron-Medium";
+  src: url("./fonts/Orbitron-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron-Regular";
+  src: url("./fonts/Orbitron-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron-SemiBold";
+  src: url("./fonts/Orbitron-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("./fonts/Poppins-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-BlackItalic";
+  src: url("./fonts/Poppins-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-BoldItalic";
+  src: url("./fonts/Poppins-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("./fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("./fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("./fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ExtraLightItalic";
+  src: url("./fonts/Poppins-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("./fonts/Poppins-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-LightItalic";
+  src: url("./fonts/Poppins-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-MediumItalic";
+  src: url("./fonts/Poppins-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-SemiBoldItalic";
+  src: url("./fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("./fonts/Poppins-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ThinItalic";
+  src: url("./fonts/Poppins-ThinItalic.ttf") format("truetype");
+}
+
+body {
+  font-family: "AirbnbCereal_W_Lt", sans-serif;
 }
