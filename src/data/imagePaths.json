@@ -15,5 +15,7 @@
   "google": "/google.svg",
   "nameIcon": "/name_icon.svg",
   "emailIcon": "/email_icon.svg",
-  "passwordIcon": "/password_icon.svg"
+  "passwordIcon": "/password_icon.svg",
+  "location": "/location.svg",
+  "askAI": "/askAI.svg"
 }
