@@ -5,7 +5,6 @@ const InputField = ({ id, type, placeholder, icon }) => {
   return (
     <div className="mb-8 relative">
       {" "}
-      {/* Increase the margin-bottom here */}
       <img
         src={icon}
         alt={`${placeholder} Icon`}
@@ -15,7 +14,7 @@ const InputField = ({ id, type, placeholder, icon }) => {
         type={type}
         id={id}
         placeholder={placeholder}
-        className="input input-bordered w-full pl-10"
+        className="input input-bordered w-full pl-10 bg-registrationPageBg focus:outline-none"
       />
     </div>
   );
