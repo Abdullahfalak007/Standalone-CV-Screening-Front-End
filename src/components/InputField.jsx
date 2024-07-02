@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 const InputField = ({ id, type, placeholder, icon }) => {
   return (
     <div className="mb-8 relative">
-      {" "}
       <img
         src={icon}
         alt={`${placeholder} Icon`}

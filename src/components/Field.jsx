@@ -3,7 +3,7 @@ import dropdownsData from "../data/dropdownsData.json";
 
 const Field = () => {
   return (
-    <div className=" py-8">
+    <div className="py-8">
       <div className="container mx-auto p-4">
         <div className="flex flex-col md:flex-row md:space-x-4">
           <div className="flex flex-col space-y-4 md:w-[358px]">

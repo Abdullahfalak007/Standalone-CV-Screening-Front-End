@@ -1,32 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import imagePaths from "../data/imagePaths.json"; // Import the image paths
+import ChatBubble from "../components/ChatBubble"; // Import the ChatBubble component
 
 const RankedResumes = ({ resumeData }) => {
   return (
-    <div className="flex-grow p-8">
+    <div className="flex-grow p-8 relative">
       <h2 className="text-3xl font-bold mb-6 text-center">Ranked Resumes</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {resumeData.map((resume, index) => (
           <div
             key={index}
-            className="p-6 border rounded-lg shadow-lg bg-[#E4F0FF] relative"
-            style={{
-              borderRadius: "17.84px",
-              width: "368.22px",
-              height: "370.13px",
-            }}
+            className="p-6 border rounded-[17.84px] shadow-lg bg-[#E4F0FF] relative w-[368.22px] h-[370.13px]"
           >
             <div className="absolute top-4 right-0 flex flex-col space-y-2">
-              <div
-                className="flex items-center justify-center"
-                style={{
-                  width: "81.52px",
-                  height: "28.82px",
-                  borderRadius: "8.23px 0 0 8.23px",
-                  background: "linear-gradient(to right, #0362B3, #4E9BCF)",
-                }}
-              >
+              <div className="flex items-center justify-center w-[81.52px] h-[28.82px] rounded-tl-[8.23px] rounded-bl-[8.23px] bg-gradient-to-r from-[#0362B3] to-[#4E9BCF]">
                 <img
                   src={imagePaths.askAI} // Ensure you have the correct path for the AI icon
                   alt="AI Icon"
@@ -36,14 +24,7 @@ const RankedResumes = ({ resumeData }) => {
                   Ask AI
                 </span>
               </div>
-              <button
-                className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-3 rounded-md font-airbnbCereal_W_Bd text-[12.35px]"
-                style={{
-                  width: "81.52px",
-                  height: "28.82px",
-                  borderRadius: "8.23px 0 0 8.23px",
-                }}
-              >
+              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-3 rounded-tl-[8.23px] rounded-bl-[8.23px] w-[81.52px] h-[28.82px] font-airbnbCereal_W_Bd text-[12.35px]">
                 {resume.rankingIndex}% Rank
               </button>
             </div>
@@ -51,29 +32,13 @@ const RankedResumes = ({ resumeData }) => {
               <img
                 src={resume.image}
                 alt={`${resume.name}'s profile`}
-                className="object-cover rounded-full mr-4 mt-2 border-4 border-[#0362B3]"
-                style={{
-                  width: "45.4px",
-                  height: "45.4px",
-                }}
+                className="object-cover rounded-full mr-4 mt-2 border-4 border-[#0362B3] w-[45.4px] h-[45.4px]"
               />
               <div>
-                <h3
-                  className="font-comfortaaBold"
-                  style={{
-                    fontWeight: 400,
-                    fontSize: "19.46px",
-                  }}
-                >
+                <h3 className="font-comfortaaBold font-normal text-[19.46px]">
                   {resume.name}
                 </h3>
-                <p
-                  className="text-gray-600 flex items-center font-comfortaaMedium"
-                  style={{
-                    fontWeight: 200,
-                    fontSize: "12.97px",
-                  }}
-                >
+                <p className="text-gray-600 flex items-center font-comfortaaMedium font-extralight text-[12.97px]">
                   <img
                     src={imagePaths.location}
                     alt="Location icon"
@@ -84,19 +49,10 @@ const RankedResumes = ({ resumeData }) => {
               </div>
             </div>
             <div className="mb-4">
-              <h4
-                className="font-comfortaaLight"
-                style={{
-                  fontWeight: 200,
-                  fontSize: "12.97px",
-                }}
-              >
+              <h4 className="font-comfortaaLight font-extralight text-[12.97px]">
                 Skills
               </h4>
-              <div
-                className="text-customBlue font-comfortaaLight"
-                style={{ fontWeight: 400, fontSize: "19.46px" }}
-              >
+              <div className="text-customBlue font-comfortaaLight font-normal text-[19.46px]">
                 {resume.skills.split(",").map((skill, i) => (
                   <span key={i} className="mr-3">
                     {skill.trim()}
@@ -105,72 +61,33 @@ const RankedResumes = ({ resumeData }) => {
               </div>
             </div>
             <div className="mb-4">
-              <h4
-                className="font-comfortaaLight"
-                style={{
-                  fontWeight: 200,
-                  fontSize: "12.97px",
-                }}
-              >
+              <h4 className="font-comfortaaLight font-extralight text-[12.97px]">
                 Total Experience
               </h4>
-              <p
-                className="text-customBlue font-comfortaaLight"
-                style={{
-                  fontWeight: 400,
-                  fontSize: "19.46px",
-                }}
-              >
+              <p className="text-customBlue font-comfortaaLight font-normal text-[19.46px]">
                 {resume.totalExperience}
               </p>
             </div>
             <div className="mb-4">
-              <h4
-                className="font-comfortaaLight"
-                style={{
-                  fontWeight: 500,
-                  fontSize: "12.97px",
-                }}
-              >
+              <h4 className="font-comfortaaLight font-medium text-[12.97px]">
                 Education
               </h4>
-              <p
-                className="text-customBlue font-comfortaaLight"
-                style={{
-                  fontWeight: 500,
-                  fontSize: "19.46px",
-                }}
-              >
+              <p className="text-customBlue font-comfortaaLight font-medium text-[19.46px]">
                 {resume.education}
               </p>
             </div>
             <div className="flex justify-center space-x-4 mt-4">
-              <button
-                className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-md font-airbnbCereal_W_Bd hover:bg-[#024b89] transition flex items-center justify-center"
-                style={{
-                  width: "91.82px",
-                  height: "28.82px",
-                  borderRadius: "8.23px",
-                  border: "0.82px solid #0362B3",
-                }}
-              >
+              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-airbnbCereal_W_Bd border border-[#0362B3] flex items-center justify-center">
                 View
               </button>
-              <button
-                className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-md font-airbnbCereal_W_Bd hover:bg-[#024b89] transition flex items-center justify-center"
-                style={{
-                  width: "91.82px",
-                  height: "28.82px",
-                  borderRadius: "8.23px",
-                  border: "0.82px solid #0362B3",
-                }}
-              >
+              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-airbnbCereal_W_Bd border border-[#0362B3] flex items-center justify-center">
                 Download
               </button>
             </div>
           </div>
         ))}
       </div>
+      <ChatBubble />
     </div>
   );
 };

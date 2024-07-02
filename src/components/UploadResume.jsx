@@ -30,16 +30,7 @@ const UploadResume = ({ onUploadComplete }) => {
     <div className="flex flex-col items-center py-8">
       {isLoading && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div
-            className="flex flex-col items-center justify-center"
-            style={{
-              width: "768px",
-              height: "411px",
-              borderRadius: "20px",
-              background: "linear-gradient(to top right, #0362B3, #E4F0FF)",
-              padding: "20px",
-            }}
-          >
+          <div className="flex flex-col items-center justify-center w-[768px] h-[411px] rounded-[20px] bg-gradient-to-tr from-[#0362B3] to-[#E4F0FF] p-4">
             <svg
               fill="currentColor"
               viewBox="0 0 1792 1792"
@@ -48,15 +39,7 @@ const UploadResume = ({ onUploadComplete }) => {
             >
               <path d="M1760 896q0 176-68.5 336t-184 275.5-275.5 184-336 68.5-336-68.5-275.5-184-184-275.5-68.5-336q0-213 97-398.5t265-305.5 374-151v228q-221 45-366.5 221t-145.5 406q0 130 51 248.5t136.5 204 204 136.5 248.5 51 248.5-51 204-136.5 136.5-204 51-248.5q0-230-145.5-406t-366.5-221v-228q206 31 374 151t265 305.5 97 398.5z" />
             </svg>
-            <p
-              className="text-white mt-8 text-center"
-              style={{
-                fontFamily: "AirbnbCereal_W_Bk",
-                fontWeight: 400,
-                fontSize: "40px",
-                lineHeight: "40px",
-              }}
-            >
+            <p className="text-white mt-8 text-center font-airbnbCereal_W_Bk font-light text-[40px] leading-[40px]">
               Waiting For Ranking Resumes
             </p>
           </div>

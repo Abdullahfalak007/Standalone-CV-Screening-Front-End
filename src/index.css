@@ -163,3 +163,7 @@
 body {
   font-family: "AirbnbCereal_W_Lt", sans-serif;
 }
+
+.bottom-for-traingle {
+  bottom: -4.2rem;
+}

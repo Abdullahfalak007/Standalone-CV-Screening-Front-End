@@ -9,7 +9,7 @@ const Footer = () => {
         alt="Luminosity"
         className="absolute inset-0 w-full h-full object-cover opacity-100"
       />
-      <div className="container relative mx-auto flex flex-col md:flex-row flex-wrap justify-between gap-4 px-[1.5] md:px-36">
+      <div className="container relative mx-auto flex flex-col md:flex-row flex-wrap justify-between gap-4 px-4 md:px-36">
         {/* First Column */}
         <div className="mb-4 md:mb-0 flex-[1.5]">
           <img
@@ -25,7 +25,7 @@ const Footer = () => {
           </p>
         </div>
         {/* Second Column */}
-        <div className="mb-4 md:mb-0 flex-1 px-[1rem]">
+        <div className="mb-4 md:mb-0 flex-1 px-4">
           <h6 className="font-bold mb-3 text-[14.43px]">Company</h6>
           <ul className="space-y-3 text-[10px]">
             <li>
@@ -43,7 +43,7 @@ const Footer = () => {
           </ul>
         </div>
         {/* Third Column */}
-        <div className="mb-4 md:mb-0 flex-1 px-[1rem]">
+        <div className="mb-4 md:mb-0 flex-1 px-4">
           <h6 className="font-bold mb-3 text-[14.43px]">Support</h6>
           <ul className="space-y-3 text-[10px]">
             <li>

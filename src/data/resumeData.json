@@ -25,5 +25,113 @@
     "totalExperience": "4 years",
     "education": "B.Sc. in Software Engineering",
     "image": "/person3.jpg"
+  },
+  {
+    "name": "John Doe",
+    "location": "New York, NY",
+    "rankingIndex": 85,
+    "skills": "JavaScript, React, Node.js",
+    "totalExperience": "5 years",
+    "education": "B.Sc. in Computer Science",
+    "image": "/person1.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "location": "San Francisco, CA",
+    "rankingIndex": 90,
+    "skills": "Python, Django, Machine Learning",
+    "totalExperience": "7 years",
+    "education": "M.Sc. in Data Science",
+    "image": "/person2.jpeg"
+  },
+  {
+    "name": "Emily Johnson",
+    "location": "Austin, TX",
+    "rankingIndex": 78,
+    "skills": "Java, Spring Boot, Microservices",
+    "totalExperience": "4 years",
+    "education": "B.Sc. in Software Engineering",
+    "image": "/person3.jpg"
+  },
+  {
+    "name": "John Doe",
+    "location": "New York, NY",
+    "rankingIndex": 85,
+    "skills": "JavaScript, React, Node.js",
+    "totalExperience": "5 years",
+    "education": "B.Sc. in Computer Science",
+    "image": "/person1.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "location": "San Francisco, CA",
+    "rankingIndex": 90,
+    "skills": "Python, Django, Machine Learning",
+    "totalExperience": "7 years",
+    "education": "M.Sc. in Data Science",
+    "image": "/person2.jpeg"
+  },
+  {
+    "name": "Emily Johnson",
+    "location": "Austin, TX",
+    "rankingIndex": 78,
+    "skills": "Java, Spring Boot, Microservices",
+    "totalExperience": "4 years",
+    "education": "B.Sc. in Software Engineering",
+    "image": "/person3.jpg"
+  },
+  {
+    "name": "John Doe",
+    "location": "New York, NY",
+    "rankingIndex": 85,
+    "skills": "JavaScript, React, Node.js",
+    "totalExperience": "5 years",
+    "education": "B.Sc. in Computer Science",
+    "image": "/person1.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "location": "San Francisco, CA",
+    "rankingIndex": 90,
+    "skills": "Python, Django, Machine Learning",
+    "totalExperience": "7 years",
+    "education": "M.Sc. in Data Science",
+    "image": "/person2.jpeg"
+  },
+  {
+    "name": "Emily Johnson",
+    "location": "Austin, TX",
+    "rankingIndex": 78,
+    "skills": "Java, Spring Boot, Microservices",
+    "totalExperience": "4 years",
+    "education": "B.Sc. in Software Engineering",
+    "image": "/person3.jpg"
+  },
+  {
+    "name": "John Doe",
+    "location": "New York, NY",
+    "rankingIndex": 85,
+    "skills": "JavaScript, React, Node.js",
+    "totalExperience": "5 years",
+    "education": "B.Sc. in Computer Science",
+    "image": "/person1.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "location": "San Francisco, CA",
+    "rankingIndex": 90,
+    "skills": "Python, Django, Machine Learning",
+    "totalExperience": "7 years",
+    "education": "M.Sc. in Data Science",
+    "image": "/person2.jpeg"
+  },
+  {
+    "name": "Emily Johnson",
+    "location": "Austin, TX",
+    "rankingIndex": 78,
+    "skills": "Java, Spring Boot, Microservices",
+    "totalExperience": "4 years",
+    "education": "B.Sc. in Software Engineering",
+    "image": "/person3.jpg"
   }
 ]

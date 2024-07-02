@@ -17,5 +17,8 @@
   "emailIcon": "/email_icon.svg",
   "passwordIcon": "/password_icon.svg",
   "location": "/location.svg",
-  "askAI": "/askAI.svg"
+  "askAI": "/askAI.svg",
+  "robotIcon": "/robot_icon.svg",
+  "sendArrow": "/send_arrow.svg",
+  "triangleIcon": "/triangle_icon.svg"
 }
