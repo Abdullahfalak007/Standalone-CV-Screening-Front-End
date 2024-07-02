@@ -20,5 +20,10 @@
   "askAI": "/askAI.svg",
   "robotIcon": "/robot_icon.svg",
   "sendArrow": "/send_arrow.svg",
-  "triangleIcon": "/triangle_icon.svg"
+  "triangleIcon": "/triangle_icon.svg",
+  "person1": "/person_1.svg",
+  "person2": "/person_2.svg",
+  "person3": "/person_3.svg",
+  "person4": "/person_4.svg",
+  "curveLine": "/curve_line.svg"
 }

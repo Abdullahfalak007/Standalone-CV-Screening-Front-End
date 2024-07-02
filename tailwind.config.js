@@ -44,6 +44,7 @@ module.exports = {
         comfortaaMedium: ["Comfortaa-Medium", "sans-serif"],
         comfortaaRegular: ["Comfortaa-Regular", "sans-serif"],
         comfortaaSemiBold: ["Comfortaa-SemiBold", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
