@@ -18,7 +18,7 @@ const RankedResumes = ({ resumeData }) => {
                 <img
                   src={imagePaths.askAI} // Ensure you have the correct path for the AI icon
                   alt="AI Icon"
-                  className="w-4 h-4 mr-1"
+                  className="w-[11.53px] h-[11.53px] mr-1"
                 />
                 <span className="text-white font-airbnbCereal_W_Bd text-[12.35px]">
                   Ask AI
@@ -35,10 +35,10 @@ const RankedResumes = ({ resumeData }) => {
                 className="object-cover rounded-full mr-4 mt-2 border-4 border-[#0362B3] w-[45.4px] h-[45.4px]"
               />
               <div>
-                <h3 className="font-comfortaaBold font-normal text-[19.46px]">
+                <h3 className="font-poppinsMedium font-normal text-[19.46px]">
                   {resume.name}
                 </h3>
-                <p className="text-gray-600 flex items-center font-comfortaaMedium font-extralight text-[12.97px]">
+                <p className="text-gray-600 flex items-center font-interMedium font-extralight text-[12.97px]">
                   <img
                     src={imagePaths.location}
                     alt="Location icon"
@@ -49,10 +49,10 @@ const RankedResumes = ({ resumeData }) => {
               </div>
             </div>
             <div className="mb-4">
-              <h4 className="font-comfortaaLight font-extralight text-[12.97px]">
+              <h4 className="font-poppinsMedium font-extralight text-[12.97px] mt-8">
                 Skills
               </h4>
-              <div className="text-customBlue font-comfortaaLight font-normal text-[19.46px]">
+              <div className="text-customBlue font-interMedium font-normal text-[16px]">
                 {resume.skills.split(",").map((skill, i) => (
                   <span key={i} className="mr-3">
                     {skill.trim()}
@@ -61,26 +61,26 @@ const RankedResumes = ({ resumeData }) => {
               </div>
             </div>
             <div className="mb-4">
-              <h4 className="font-comfortaaLight font-extralight text-[12.97px]">
+              <h4 className="font-poppinsMedium font-extralight text-[12.97px] mt-8">
                 Total Experience
               </h4>
-              <p className="text-customBlue font-comfortaaLight font-normal text-[19.46px]">
+              <p className="text-customBlue font-interMedium font-normal text-[16px]">
                 {resume.totalExperience}
               </p>
             </div>
             <div className="mb-4">
-              <h4 className="font-comfortaaLight font-medium text-[12.97px]">
+              <h4 className="font-poppinsMedium font-medium text-[12.97px] mt-8">
                 Education
               </h4>
-              <p className="text-customBlue font-comfortaaLight font-medium text-[19.46px]">
+              <p className="text-customBlue font-interMedium font-medium text-[16px]">
                 {resume.education}
               </p>
             </div>
             <div className="flex justify-center space-x-4 mt-4">
-              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-airbnbCereal_W_Bd border border-[#0362B3] flex items-center justify-center">
+              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-poppinsMedium text-[12.35px] border border-[#0362B3] flex items-center justify-center">
                 View
               </button>
-              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-airbnbCereal_W_Bd border border-[#0362B3] flex items-center justify-center">
+              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-poppinsMedium text-[12.35px] border border-[#0362B3] flex items-center justify-center">
                 Download
               </button>
             </div>
