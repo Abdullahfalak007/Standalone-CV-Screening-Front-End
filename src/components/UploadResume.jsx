@@ -5,12 +5,14 @@ import resumeData from "../data/resumeData.json"; // Import the resume data
 
 const UploadResume = ({ onUploadComplete }) => {
   const [fileUploaded, setFileUploaded] = useState(false); // New state for file upload
+  const [fileName, setFileName] = useState(""); // State to store the uploaded file name
 
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
     if (file) {
       const fileType = file.name.split(".").pop().toLowerCase();
       if (fileType === "zip" || fileType === "rar") {
+        setFileName(file.name); // Store the file name
         setFileUploaded(true); // Set file upload flag to true
       } else {
         alert("Please upload a file in .zip or .rar format.");
@@ -57,32 +59,57 @@ const UploadResume = ({ onUploadComplete }) => {
       )}
       <div className="container mx-auto p-4 flex flex-col md:flex-row md:space-x-4 items-center">
         <div className="bg-white border rounded-md w-[818px] h-[340px] flex flex-col justify-around items-center p-4">
-          <div className="flex flex-col items-center">
-            <img
-              src={imagePaths.dragAndDrop}
-              alt="Drag and Drop"
-              className="w-[47px] h-[47px] mb-[17px]"
-            />
-            <p className="text-customBlue text-lg mb-[17px] font-poppinsRegular text-[20px] leading-[30px]">
-              Drag And Drop A File Here
-            </p>
-            <label className="flex items-center justify-center w-[119px] h-[35px] rounded-[10px] border border-[1px] bg-gradient-to-r from-[#0362B3] via-[#076FB5] to-[#4E9BCF] cursor-pointer">
+          {fileUploaded ? (
+            <div className="flex flex-col items-center">
+              <svg
+                className="w-12 h-12 text-green-500 mb-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <p className="text-customBlue text-lg mb-2 font-poppinsRegular text-[20px] leading-[30px]">
+                {fileName}
+              </p>
+              <p className="text-customBlue text-lg mb-[17px] font-poppinsRegular text-[20px] leading-[30px]">
+                File uploaded successfully!
+              </p>
+            </div>
+          ) : (
+            <div className="flex flex-col items-center">
               <img
-                src={imagePaths.browse}
-                alt="Browse"
-                className="w-[16px] h-[15.2] mr-2"
+                src={imagePaths.dragAndDrop}
+                alt="Drag and Drop"
+                className="w-[47px] h-[47px] mb-[17px]"
               />
-              <span className="text-white font-poppinsRegular text-[15px]">
-                Browse
-              </span>
-              <input
-                type="file"
-                className="hidden"
-                accept=".zip , .rar"
-                onChange={handleFileUpload}
-              />
-            </label>
-          </div>
+              <p className="text-customBlue text-lg mb-[17px] font-poppinsRegular text-[20px] leading-[30px]">
+                Drag And Drop A File Here
+              </p>
+              <label className="flex items-center justify-center w-[119px] h-[35px] rounded-[10px] border border-[1px] border-customDarkBlue bg-gradient-to-r from-[#0362B3] via-[#076FB5] to-[#4E9BCF] cursor-pointer">
+                <img
+                  src={imagePaths.browse}
+                  alt="Browse"
+                  className="w-[16px] h-[15.2] mr-2"
+                />
+                <span className="text-white font-poppinsRegular text-[15px]">
+                  Browse
+                </span>
+                <input
+                  type="file"
+                  className="hidden"
+                  accept=".zip , .rar"
+                  onChange={handleFileUpload}
+                />
+              </label>
+            </div>
+          )}
         </div>
         <div className="text-center my-4 md:my-0 w-[34px] h-[33px] flex items-center justify-center">
           <span className="text-customBlue font-poppinsMedium text-lg">Or</span>
@@ -111,7 +138,7 @@ const UploadResume = ({ onUploadComplete }) => {
         </div>
       </div>
       <button
-        className="btn text-white bg-customBlue mt-4 w-[228px] h-[50.83px] font-poppinsRegular text-[21.78px] font-medium text-center rounded-[14.52px]"
+        className="btn btn-primary border-customBlue text-white bg-customBlue mt-4 w-[228px] h-[50.83px] font-poppinsRegular text-[21.78px] font-medium text-center rounded-[14.52px]"
         onClick={handleRankResumes}
       >
         Rank Resumes
