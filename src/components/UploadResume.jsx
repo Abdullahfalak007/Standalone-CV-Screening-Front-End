@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 import imagePaths from "../data/imagePaths.json";
 import resumeData from "../data/resumeData.json"; // Import the resume data
 
-const UploadResume = ({ onUploadComplete }) => {
+const UploadResume = ({ onUploadComplete, formData }) => {
   const [fileUploaded, setFileUploaded] = useState(false); // New state for file upload
   const [fileName, setFileName] = useState(""); // State to store the uploaded file name
+  const [isLoading, setIsLoading] = useState(false); // New loading state for ranking resumes
 
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
@@ -21,6 +22,13 @@ const UploadResume = ({ onUploadComplete }) => {
   };
 
   const handleRankResumes = async () => {
+    if (!formData.jobTitle || !formData.jobDescription) {
+      alert(
+        "Please fill in the required fields: Job Title and Job Description."
+      );
+      return;
+    }
+
     if (fileUploaded) {
       setIsLoading(true); // Trigger loading state
 
@@ -35,8 +43,6 @@ const UploadResume = ({ onUploadComplete }) => {
       alert("Please upload a file before ranking resumes.");
     }
   };
-
-  const [isLoading, setIsLoading] = useState(false); // New loading state for ranking resumes
 
   return (
     <div className="flex flex-col items-center py-8">
@@ -149,6 +155,11 @@ const UploadResume = ({ onUploadComplete }) => {
 
 UploadResume.propTypes = {
   onUploadComplete: PropTypes.func.isRequired,
+  formData: PropTypes.shape({
+    jobTitle: PropTypes.string.isRequired,
+    topCvs: PropTypes.string.isRequired,
+    jobDescription: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default UploadResume;

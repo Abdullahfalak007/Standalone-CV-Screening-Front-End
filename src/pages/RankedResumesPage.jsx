@@ -4,11 +4,16 @@ import Footer from "../components/Footer";
 import RankedResumes from "../components/RankedResumes";
 import Field from "../components/Field";
 
-const RankedResumesPage = ({ resumeData }) => {
+const RankedResumesPage = ({ resumeData, formData }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Field />
+      <Field
+        jobTitle={formData.jobTitle}
+        topCvs={formData.topCvs}
+        jobDescription={formData.jobDescription}
+        onChange={() => {}} // Pass a dummy function as onChange is not needed here
+      />
       <RankedResumes resumeData={resumeData} />
       <Footer />
     </div>

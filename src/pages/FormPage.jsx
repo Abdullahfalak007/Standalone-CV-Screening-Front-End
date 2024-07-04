@@ -8,22 +8,39 @@ import RankedResumes from "./RankedResumesPage";
 
 const FormPage = () => {
   const [resumeData, setResumeData] = useState(null);
+  const [formData, setFormData] = useState({
+    jobTitle: "",
+    topCvs: "",
+    jobDescription: "",
+  });
 
   const handleUploadComplete = (data) => {
     setResumeData(data);
   };
 
+  const handleChange = (field, value) => {
+    setFormData({ ...formData, [field]: value });
+  };
+
   if (resumeData) {
-    return <RankedResumes resumeData={resumeData} />;
+    return <RankedResumes resumeData={resumeData} formData={formData} />;
   }
 
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-grow">
-        <Field />
+        <Field
+          jobTitle={formData.jobTitle}
+          topCvs={formData.topCvs}
+          jobDescription={formData.jobDescription}
+          onChange={handleChange}
+        />
         <CheckingResumeIndex />
-        <UploadResume onUploadComplete={handleUploadComplete} />
+        <UploadResume
+          onUploadComplete={handleUploadComplete}
+          formData={formData}
+        />
       </div>
       <Footer />
     </div>
