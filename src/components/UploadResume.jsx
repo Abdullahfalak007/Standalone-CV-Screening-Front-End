@@ -4,27 +4,37 @@ import imagePaths from "../data/imagePaths.json";
 import resumeData from "../data/resumeData.json"; // Import the resume data
 
 const UploadResume = ({ onUploadComplete }) => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [fileUploaded, setFileUploaded] = useState(false); // New state for file upload
 
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
     if (file) {
       const fileType = file.name.split(".").pop().toLowerCase();
       if (fileType === "zip" || fileType === "rar") {
-        setIsLoading(true);
-
-        // Dummy function to simulate waiting for 3 seconds
-        await new Promise((resolve) => setTimeout(resolve, 3000));
-
-        setIsLoading(false);
-
-        // Call the function passed from the parent to handle the completion of the upload
-        onUploadComplete(resumeData);
+        setFileUploaded(true); // Set file upload flag to true
       } else {
         alert("Please upload a file in .zip or .rar format.");
       }
     }
   };
+
+  const handleRankResumes = async () => {
+    if (fileUploaded) {
+      setIsLoading(true); // Trigger loading state
+
+      // Dummy function to simulate waiting for 3 seconds
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+
+      setIsLoading(false); // Stop loading state
+
+      // Call the function passed from the parent to handle the completion of the upload
+      onUploadComplete(resumeData);
+    } else {
+      alert("Please upload a file before ranking resumes.");
+    }
+  };
+
+  const [isLoading, setIsLoading] = useState(false); // New loading state for ranking resumes
 
   return (
     <div className="flex flex-col items-center py-8">
@@ -68,6 +78,7 @@ const UploadResume = ({ onUploadComplete }) => {
               <input
                 type="file"
                 className="hidden"
+                accept=".zip , .rar"
                 onChange={handleFileUpload}
               />
             </label>
@@ -99,7 +110,10 @@ const UploadResume = ({ onUploadComplete }) => {
           </button>
         </div>
       </div>
-      <button className="btn text-white bg-customBlue mt-4 w-[228px] h-[50.83px] font-poppinsRegular text-[21.78px] font-medium text-center rounded-[14.52px]">
+      <button
+        className="btn text-white bg-customBlue mt-4 w-[228px] h-[50.83px] font-poppinsRegular text-[21.78px] font-medium text-center rounded-[14.52px]"
+        onClick={handleRankResumes}
+      >
         Rank Resumes
       </button>
     </div>
