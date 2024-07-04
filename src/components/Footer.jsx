@@ -95,3 +95,170 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// <footer class="style-1">
+// <div class="container">
+// <div class="content">
+// <div class="row justify-content-center">
+// <div class="col-lg-4">
+// <div class="foot_info">
+// <a class="navbar-brand" href="https://cybergen.com">
+// <img src="https://cybergen.com/uploads/images/footer_logo.png?v=1719999801" alt="" style="width: 200px;">
+// </a>
+
+// <ul class="mb-4">
+// <li class="d-flex">
+// <i class="bi bi-house me-3"></i>
+// <a href="https://www.google.com/maps/dir//2875+S+Ocean+Blvd+%23200+Palm+Beach,+FL+33480+USA/@26.6163634,-80.038212,13z/data=!4m5!4m4!1m0!1m2!1m1!1s0x88d8d9c696155555:0x1c62d8017f4ff797" target="_blank">
+// <span>Florida Office<br>2875 S Ocean Blvd, Ste. 200<br>Palm Beach, FL
+// 33480</span>
+// </a>
+// </li>
+// <li class="d-flex">
+// <i class="bi bi-envelope me-3"></i>
+// <a href="mailto:info@cybergen.com" target="_blank">
+// <span>info@cybergen.com</span>
+// </a>
+// </li>
+// <li class="d-flex">
+// <i class="bi bi-phone me-3"></i>
+// <a href="tel:+1-800-561-2713" target="_blank">
+// <span>+1-800-561-2713</span>
+// </a>
+// </li>
+// </ul>
+// <div class="social_icons mb-4">
+// <a href="https://twitter.com/TheCyberGen" target="_blank">
+// <i class="fab fa-twitter"></i>
+// </a>
+// <a href="https://www.facebook.com/thecybergen/" target="_blank">
+// <i class="fab fa-facebook-f"></i>
+// </a>
+// <a href="https://www.linkedin.com/company/the-cyber-generation/" target="_blank">
+// <i class="fab fa-linkedin-in"></i>
+// </a>
+// <a href="https://www.instagram.com/cybergen1team/" target="_blank">
+// <i class="fab fa-instagram"></i>
+// </a>
+// <a href="https://www.youtube.com/channel/UCnlC6DWQ_dXpSebcZ1YLnzg" target="_blank">
+// <i class="fab fa-youtube"></i>
+// </a>
+// </div>
+// <div class="terms ml-3"><span class="me-3">
+
+// <i class="fal fa-file-contract" style=""></i>
+// </span><a href="terms-and-conditions">Terms and Conditions</a></div>
+// </div>
+// </div>
+// <div class="col-lg-2">
+// <div class="links">
+// <div class="cont">
+// <h6 class="link_title"> Services </h6>
+// <ul>
+// <li>
+// <a class="" href="https://cybergen.com/cyber-security-solutions">Cyber
+// Security
+// Solutions</a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/software-development">Software
+// Development </a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/digital-branding-services">Digital
+// Branding</a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/managed-services">Managed Services</a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/professional-services">Professional
+// Services</a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/strategic-staffing">Strategic
+// Staffing</a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/cybergen-academy">Technical
+// Training</a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/ai">Artificial Intelligence</a>
+// </li>
+// <li>
+// <a class="" href="https://cybergen.com/procurement-services">Procurement Services</a>
+// </li>
+
+// </ul>
+// </div>
+// </div>
+// </div>
+// <div class="col-lg-2">
+// <div class="links">
+// <div class="cont">
+// <h6 class="link_title"> Information </h6>
+// <ul>
+// <li>
+// <a href="https://cybergen.com/about-us">About Us </a>
+// </li>
+
+// <li>
+// <a href="https://cybergen.com/blog">Blog </a>
+// </li>
+// <li>
+// <a href="https://cybergen.com/pressrelease">Press Release </a>
+// </li>
+// <li>
+// <a href="https://cybergen.com/careers">Careers </a>
+// </li>
+// <li>
+// <a href="https://cybergen.com/contact-us">Contact Us</a>
+// </li>
+// <li>
+// <a href="https://cybergen.com/partner-with-us">Partner With Us</a>
+// </li>
+// </ul>
+// </div>
+// </div>
+// </div>
+// <div class="col-lg-4">
+// <div class="foot_subscribe">
+// <h6 class="link_title"> Newsletter </h6>
+// <p> Register now to get latest updates on promotions. </p>
+// <form id="Newsletter" novalidate="">
+// <input type="hidden" name="_token" value="BkJcVWVOEW1hhRchUFWxb1ID1T3MQexpczlWecQc" autocomplete="off"> <input type="hidden" name="form_name" value="Cybergen Newsletter">
+// <input type="hidden" name="page_url" value="https://cybergen.com">
+// <div class="input-group my-4">
+// <input type="email" name="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2" control-id="ControlID-8">
+// <button class="btn butn-gard border-0 text-white px-3" type="submit" id="button-addon2" control-id="ControlID-9">
+// <span>Subscribe</span>
+// </button>
+// </div>
+// <div class="col-lg-12 mt-2 alert-class alert-danger text-center error-msg" id="error-msg"></div>
+// <div class="col-lg-12 text-center msg" id="footer-msg"></div>
+// </form>
+// <div> <span id="footeremail" class="footer_email_error"></span></div>
+// <div id="footer-loader" style="display:none;">
+// <i class="fas fa-spinner fa-spin"></i> Sending message...
+// </div>
+// <div id="footersuccessMessage" class="success-message col-lg-12 global_success text-center msg "></div>
+// <p class="fst-italic">By subscribing, I have accepted the <a href="https://cybergen.com/privacy-policy" class="text-decoration-underline"> Policy</a>
+// </p>
+// </div>
+// </div>
+// </div>
+// </div>
+// <div class="row justify-content-center">
+// <div class="col-lg-12">
+// <div class="foot">
+// <p>©
+// 2024 Copyrights by <b style="color:white;">CyberGen.</b> All Rights
+// Reserved.
+
+// </p>
+// </div>
+// </div>
+// </div>
+// </div>
+// </footer>

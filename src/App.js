@@ -9,8 +9,8 @@ function App() {
     <div className="min-h-screen flex flex-col">
       {/* <Signup /> */}
       {/* <Login /> */}
-      {/* <FormPage /> */}
-      <LandingPage />
+      <FormPage />
+      {/* <LandingPage /> */}
     </div>
   );
 }
