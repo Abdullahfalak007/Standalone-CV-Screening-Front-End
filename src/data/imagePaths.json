@@ -25,5 +25,6 @@
   "person2": "/person_2.svg",
   "person3": "/person_3.svg",
   "person4": "/person_4.svg",
-  "curveLine": "/curve_line.svg"
+  "curveLine": "/curve_line.svg",
+  "dropdownArrow": "/dropdown_arrow.svg"
 }
