@@ -190,10 +190,10 @@ const RankedResumes = ({ resumeData, topCvs }) => {
               </p>
             </div>
             <div className="flex justify-center space-x-4 mt-4">
-              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-poppinsMedium text-[12.35px] border border-[#0362B3] flex items-center justify-center">
+              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[0.51463rem] w-[91.82px] h-[28.82px] font-poppinsMedium text-[12.35px] border border-[#0362B3] flex items-center justify-center">
                 View
               </button>
-              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[8.23px] w-[91.82px] h-[28.82px] font-poppinsMedium text-[12.35px] border border-[#0362B3] flex items-center justify-center">
+              <button className="bg-gradient-to-r from-[#0362B3] to-[#4E9BCF] text-white py-1 px-4 rounded-[0.51463rem] w-[91.82px] h-[28.82px] font-poppinsMedium text-[12.35px] border border-[#0362B3] flex items-center justify-center">
                 Download
               </button>
             </div>

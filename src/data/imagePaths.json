@@ -26,5 +26,16 @@
   "person3": "/person_3.svg",
   "person4": "/person_4.svg",
   "curveLine": "/curve_line.svg",
-  "dropdownArrow": "/dropdown_arrow.svg"
+  "dropdownArrow": "/dropdown_arrow.svg",
+  "Footer": {
+    "house": "/house.svg",
+    "envelope": "/email.svg",
+    "phone": "/phone.svg",
+    "twitter": "/twitter.svg",
+    "facebook": "/facebook.svg",
+    "linkedin": "/linkedin.svg",
+    "instagram": "/instagram.svg",
+    "youtube": "/youtube.svg",
+    "fileContract": "/file_contract.svg"
+  }
 }
