@@ -79,7 +79,7 @@
 //                   <img
 //                     src={imagePaths.Footer.twitter}
 //                     alt="twitter"
-//                     className="w-6 h-6"
+//                     className="w-3 h-3"
 //                   />
 //                 </a>
 //                 <a
@@ -375,9 +375,8 @@ const Footer = () => {
                     href="https://www.google.com/maps/dir//2875+S+Ocean+Blvd+%23200+Palm+Beach,+FL+33480+USA/@26.6163634,-80.038212,13z/data=!4m5!4m4!1m0!1m2!1m1!1s0x88d8d9c696155555:0x1c62d8017f4ff797"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-customBlue"
                   >
-                    <span className="text-white font-poppinsRegular text-[0.7rem] font-normal">
+                    <span className="text-white font-poppinsRegular text-[0.7rem] font-normal hover:text-customBlue">
                       Florida Office 2875 S Ocean Blvd, Ste.
                       <br />
                       200 Palm Beach, FL 33480
@@ -394,9 +393,8 @@ const Footer = () => {
                     href="mailto:info@cybergen.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-customBlue"
                   >
-                    <span className="text-white font-poppinsRegular text-xs font-normal">
+                    <span className="text-white font-poppinsRegular text-xs font-normal hover:text-customBlue">
                       info@cybergen.com
                     </span>
                   </a>
@@ -411,9 +409,8 @@ const Footer = () => {
                     href="tel:+1-800-561-2713"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-customBlue"
                   >
-                    <span className="text-white font-poppinsRegular text-xs font-normal">
+                    <span className="text-white font-poppinsRegular text-xs font-normal hover:text-customBlue">
                       +1-800-561-2713
                     </span>
                   </a>
@@ -426,11 +423,13 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-customBlue"
                 >
-                  <img
-                    src={imagePaths.Footer.twitter}
-                    alt="twitter"
-                    className="w-6 h-6"
-                  />
+                  <div className="w-[1.75rem] h-[1.75rem] rounded-full bg-[#454545] flex items-center justify-center hover:bg-customBlue">
+                    <img
+                      src={imagePaths.Footer.twitter}
+                      alt="twitter"
+                      className="w-3 h-3"
+                    />
+                  </div>
                 </a>
                 <a
                   href="https://www.facebook.com/thecybergen/"
@@ -438,11 +437,13 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-customBlue"
                 >
-                  <img
-                    src={imagePaths.Footer.facebook}
-                    alt="facebook"
-                    className="w-6 h-6"
-                  />
+                  <div className="w-[1.75rem] h-[1.75rem] rounded-full bg-[#454545] flex items-center justify-center hover:bg-customBlue">
+                    <img
+                      src={imagePaths.Footer.facebook}
+                      alt="facebook"
+                      className="w-3 h-3"
+                    />
+                  </div>
                 </a>
                 <a
                   href="https://www.linkedin.com/company/the-cyber-generation/"
@@ -450,11 +451,13 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-customBlue"
                 >
-                  <img
-                    src={imagePaths.Footer.linkedin}
-                    alt="linkedin"
-                    className="w-6 h-6"
-                  />
+                  <div className="w-[1.75rem] h-[1.75rem] rounded-full bg-[#454545] flex items-center justify-center hover:bg-customBlue">
+                    <img
+                      src={imagePaths.Footer.linkedin}
+                      alt="linkedin"
+                      className="w-3 h-3"
+                    />
+                  </div>
                 </a>
                 <a
                   href="https://www.instagram.com/cybergen1team/"
@@ -462,11 +465,13 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-customBlue"
                 >
-                  <img
-                    src={imagePaths.Footer.instagram}
-                    alt="instagram"
-                    className="w-6 h-6"
-                  />
+                  <div className="w-[1.75rem] h-[1.75rem] rounded-full bg-[#454545] flex items-center justify-center hover:bg-customBlue">
+                    <img
+                      src={imagePaths.Footer.instagram}
+                      alt="instagram"
+                      className="w-3 h-3"
+                    />
+                  </div>
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UCnlC6DWQ_dXpSebcZ1YLnzg"
@@ -474,11 +479,13 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-customBlue"
                 >
-                  <img
-                    src={imagePaths.Footer.youtube}
-                    alt="youtube"
-                    className="w-6 h-6"
-                  />
+                  <div className="w-[1.75rem] h-[1.75rem] rounded-full bg-[#454545] flex items-center justify-center hover:bg-customBlue">
+                    <img
+                      src={imagePaths.Footer.youtube}
+                      alt="youtube"
+                      className="w-3 h-3"
+                    />
+                  </div>
                 </a>
               </div>
               <div className="terms mt-4 flex items-center">
@@ -675,11 +682,11 @@ const Footer = () => {
                   id="footer-msg"
                 ></div>
               </form>
-              <p className="fst-italic text-xs">
+              <p className="italic text-xs">
                 By subscribing, I have accepted the{" "}
                 <a
                   href="https://cybergen.com/privacy-policy"
-                  className="hover:text-customBlue text-decoration-underline"
+                  className="hover:text-customBlue underline"
                 >
                   Policy
                 </a>
