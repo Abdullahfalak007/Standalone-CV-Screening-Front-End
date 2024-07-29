@@ -37,5 +37,9 @@
     "instagram": "/instagram.svg",
     "youtube": "/youtube.svg",
     "fileContract": "/file_contract.svg"
+  },
+  "LandingPage": {
+    "heroImage": "hero_image.png",
+    "luminosityLines": "bg_luminosity_how_to_use.png"
   }
 }

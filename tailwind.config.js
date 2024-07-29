@@ -6,7 +6,7 @@ module.exports = {
         customBlue: "#5FA3FA",
         customBlack: "#0F2C37",
         customDarkBlue: "#0f67b2",
-        registrationPageBg: "#e2f2fa",
+        registrationPageBg: "white",
       },
       fontFamily: {
         airbnbBd: ["AirbnbCereal_W_Bd", "sans-serif"],

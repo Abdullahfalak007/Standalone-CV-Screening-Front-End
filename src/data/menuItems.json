@@ -4,23 +4,61 @@
     "link": "/home"
   },
   {
-    "label": "About us",
+    "label": "Services",
+    "link": "/services",
+    "submenu": [
+      {
+        "label": "Service 1",
+        "link": "/services/service1"
+      },
+      {
+        "label": "Service 2",
+        "link": "/services/service2"
+      }
+    ]
+  },
+  {
+    "label": "Partners",
+    "link": "/partners",
+    "submenu": [
+      {
+        "label": "Partner 1",
+        "link": "/partners/partner1"
+      },
+      {
+        "label": "Partner 2",
+        "link": "/partners/partner2"
+      }
+    ]
+  },
+  {
+    "label": "Solutions",
+    "link": "/solutions",
+    "submenu": [
+      {
+        "label": "Solution 1",
+        "link": "/solutions/solution1"
+      },
+      {
+        "label": "Solution 2",
+        "link": "/solutions/solution2"
+      }
+    ]
+  },
+  {
+    "label": "Careers",
+    "link": "/careers"
+  },
+  {
+    "label": "Blogs",
+    "link": "/blogs"
+  },
+  {
+    "label": "About Us",
     "link": "/about"
   },
   {
-    "label": "Work Flow",
-    "link": "/workflow"
-  },
-  {
-    "label": "Our Products",
-    "link": "/products"
-  },
-  {
-    "label": "Testimonials",
-    "link": "/testimonials"
-  },
-  {
-    "label": "Contact us",
+    "label": "Contact Us",
     "link": "/contact"
   }
 ]
